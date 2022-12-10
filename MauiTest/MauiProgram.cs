@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using MauiTest.Data;
+using MudBlazor.Services;
 
 namespace MauiTest;
 
@@ -16,6 +17,7 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddMauiBlazorWebView();
+		builder.Services.AddMudServices();
 
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
