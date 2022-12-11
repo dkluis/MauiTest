@@ -1,6 +1,4 @@
-﻿
-
-@page "/"
+﻿@page "/"
 
 <MudBreadcrumbs Items="_items"></MudBreadcrumbs>
 
@@ -11,17 +9,17 @@
 
         <MudText Typo="Typo.body1">Testing How Maui works on Mac, Windows, iOS and Android devices</MudText>
 
-        @*The Same of a partial HTML but with a razor component SurveyPrompt.Razor in Shared*@
-        <SurveyPrompt Title="This is an example of using a Razor Component (similar to a partial cshmtl setup)" />
+        @*The same as a partial HTML but with a razor component SurveyPrompt.Razor in Shared*@
+        <SurveyPrompt Title="This is an example of using a Razor Component (similar to a partial cshmtl setup)"/>
 
     </MudContainer>
 </MudPaper>
 
 @code {
 
-    private readonly List<BreadcrumbItem> _items = new List<BreadcrumbItem>()
+    private readonly List<BreadcrumbItem> _items = new()
     {
-        new BreadcrumbItem("Home", href: "null", disabled: true)
+        new BreadcrumbItem("Home", "null", true)
     };
-    
+
 }

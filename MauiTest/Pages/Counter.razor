@@ -11,7 +11,9 @@
 
 <p role="status">Current count: @_currentCount</p>
 
-<p><MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" @onclick="IncrementCount"></MudFab></p>
+<p>
+    <MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" @onclick="IncrementCount"></MudFab>
+</p>
 
 @code {
     private int _currentCount;

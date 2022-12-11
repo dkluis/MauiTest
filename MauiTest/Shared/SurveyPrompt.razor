@@ -1,16 +1,19 @@
-﻿
-<MudAlert><MudText Typo="Typo.caption">@Title</MudText></MudAlert>
+﻿<MudAlert>
+    <MudText Typo="Typo.caption">@Title</MudText>
+</MudAlert>
 
-<MudContainer MaxWidth="MaxWidth.ExtraLarge">
+<MudContainer MaxWidth="MaxWidth.Medium">
     <MudCard>
         <MudText Typo="Typo.body1">This is the complete code of the invoke in Index.razor:</MudText>
-        <MudImage Fluid="true" ObjectPosition="ObjectPosition.Center" Src="images/indexrazor.png" 
-                  Elevation="15" Class="rounded-lg"></MudImage>
+        <MudImage Fluid="true" ObjectPosition="ObjectPosition.Center" Src="images/indexrazor.png"
+                  Elevation="15" Class="rounded-lg">
+        </MudImage>
     </MudCard>
     <MudCard>
         <MudText Typo="Typo.body1">This is the complete code of the component SurveyPrompt.razor:</MudText>
-        <MudImage Fluid="true" ObjectPosition="ObjectPosition.Center" Src="images/surveypromptrazor.png" 
-                  Elevation="15" Class="rounded-lg"></MudImage>
+        <MudImage Fluid="true" ObjectPosition="ObjectPosition.Center" Src="images/surveypromptrazor.png"
+                  Elevation="15" Class="rounded-lg">
+        </MudImage>
     </MudCard>
 </MudContainer>
 
@@ -18,5 +21,5 @@
     // Demonstrates how a parent component can supply parameters
     [Parameter]
     public string Title { get; set; }
-}
 
+}
