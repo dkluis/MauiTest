@@ -1,8 +1,27 @@
-﻿@page "/"
+﻿
 
-<h1>Hello, world!</h1>
+@page "/"
 
-Welcome to your new app.
+<MudBreadcrumbs Items="_items"></MudBreadcrumbs>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<MudPaper>
+    <MudContainer MaxWidth="MaxWidth.ExtraExtraLarge">
 
+        <MudText Typo="Typo.h6" Align="Align.Center">Maui Test App</MudText>
+
+        <MudText Typo="Typo.body1">Testing How Maui works on Mac, Windows, iOS and Android devices</MudText>
+
+        @*The Same of a partial HTML but with a razor component SurveyPrompt.Razor in Shared*@
+        <SurveyPrompt Title="This is an example of using a Razor Component (similar to a partial cshmtl setup)" />
+
+    </MudContainer>
+</MudPaper>
+
+@code {
+
+    private readonly List<BreadcrumbItem> _items = new List<BreadcrumbItem>()
+    {
+        new BreadcrumbItem("Home", href: "null", disabled: true)
+    };
+    
+}
